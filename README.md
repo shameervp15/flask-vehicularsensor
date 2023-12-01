@@ -22,6 +22,10 @@
  ```
  flask --app main run
 ```
+OR
+```
+python -m flask --app main run
+```
 ` The endpoints are:`
 1. `/` - Monitoring the live data from sensors and storing the data
 2. `/data` - Viewing historical data and Uploading user data
