@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <script type="text/javascript" src="{{ url_for('static', filename = 'script.js') }}"></script>
+
+    <nav class="nav" tabindex="-1" onclick="this.focus()">
+      
+    </nav>
+    <div class="container">
+      <div class="hero">
+        <h1>Vehicular Sensor Display</h1>
+        
+        <div class="chart-container">
+            <canvas class="chart" id="oil_temps_chart"></canvas>
+            <canvas class="chart" id="intake_temps_chart"></canvas>
+            <canvas class="chart" id="coolant_temps_chart"></canvas>
+            <canvas class="chart" id="rpms_chart"></canvas>
+            <canvas class="chart" id="speeds_chart"></canvas>
+            <canvas class="chart" id="throttle_pos_chart"></canvas>
+        </div>
+
+        </div>
+    </div>
+      
+{% endblock content %}
